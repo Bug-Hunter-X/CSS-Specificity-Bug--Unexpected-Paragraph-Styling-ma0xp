@@ -1,0 +1,21 @@
+To solve this issue, ensure that the more specific selector comes after the less specific one in the CSS file.  Alternatively, increase the specificity of the more specific rule to guarantee it takes precedence.  Below is an example using a more specific selector and improving the order:
+
+```css
+p {
+  color: red;
+}
+div#container p {
+  color: blue;
+}
+```
+
+Alternatively, you could use the `!important` flag, but this is generally discouraged because it can make CSS harder to maintain:
+
+```css
+div#container p {
+  color: blue !important;
+}
+p {
+  color: red;
+}
+```
