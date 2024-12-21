@@ -1,0 +1,10 @@
+The following CSS code snippet exhibits an uncommon error related to the specificity of CSS selectors.  The intention is to style the paragraphs within the `#container` div differently from paragraphs elsewhere on the page. However, due to specificity rules, the `p` selector in the second rule overrides the first one.
+
+```css
+div#container p {
+  color: blue;
+}
+p {
+  color: red;
+}
+```
